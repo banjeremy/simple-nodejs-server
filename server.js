@@ -4,7 +4,7 @@ const app = express();
 app.set('port', process.env.PORT || 8080);
 
 let hitCount = 0;
-app.get('/hitcount', (req, res) => {
+app.get('/api/hitcount', (req, res) => {
   res.json({ hitCount: ++hitCount });
 });
 
